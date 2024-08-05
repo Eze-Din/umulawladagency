@@ -10,7 +10,7 @@ const ArFooter = () => {
         
         {/* Centered Logo and Motto */}
         <div className="mb-8">
-          <a href="/ar"><img src={logo} alt="UmelAwlad Logo" className="h-16 mx-auto mb-4 w-96" /></a>
+          <Link to="/ar"><img src={logo} alt="UmelAwlad Logo" className="h-16 mx-auto mb-4 w-96" /></Link>
         </div>
 
         {/* Quick Links */}

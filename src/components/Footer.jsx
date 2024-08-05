@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import FontAwesome icons
-import logo from '../assets/images/umueng3.png'; // Adjust the path to your logo image
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import logo from '../assets/images/umueng3.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,19 +10,19 @@ const Footer = () => {
         
         {/* Centered Logo and Motto */}
         <div className="mb-8">
-          <a href="/en"><img src={logo} alt="UmelAwlad Logo" className="h-16 mx-auto mb-4 w-96" /></a>
+          <Link to="/en"><img src={logo} alt="UmelAwlad Logo" className="h-16 mx-auto mb-4 w-96" /></Link>
         </div>
 
         {/* Quick Links */}
         <div>
           <h3 className="text-lg text-white font-semibold mb-4">Quick Links</h3> {/* Quick links title */}
           <ul className="flex flex-wrap justify-center text-white">
-            <li className="mb-2 px-4"><a href="/en" className="underline hover:text-gray-400">Home</a></li> {/* Home link */}
-            <li className="mb-2 px-4"><a href="/en/gallery" className="underline hover:text-gray-400">Gallery</a></li> {/* Gallery link */}
-            <li className="mb-2 px-4"><a href="/en/about" className="underline hover:text-gray-400">About</a></li> {/* About link */}
-            <li className="mb-2 px-4"><a href="/en/contact" className="underline hover:text-gray-400">Contact</a></li> {/* Contact link */}
-            <li className="mb-2 px-4"><a href="/en/services" className="underline hover:text-gray-400">Services</a></li> {/* Services link */}
-            <li className="mb-2 px-4"><a href="/en/recruitment" className="underline hover:text-gray-400">Recruitment</a></li> {/* Recruitment link */}
+            <li className="mb-2 px-4"><Link to="/en" className="underline hover:text-gray-400">Home</Link></li> {/* Home link */}
+            <li className="mb-2 px-4"><Link to="/en/gallery" className="underline hover:text-gray-400">Gallery</Link></li> {/* Gallery link */}
+            <li className="mb-2 px-4"><Link to="/en/about" className="underline hover:text-gray-400">About</Link></li> {/* About link */}
+            <li className="mb-2 px-4"><Link to="/en/contact" className="underline hover:text-gray-400">Contact</Link></li> {/* Contact link */}
+            <li className="mb-2 px-4"><Link to="/en/services" className="underline hover:text-gray-400">Services</Link></li> {/* Services link */}
+            <li className="mb-2 px-4"><Link to="/en/recruitment" className="underline hover:text-gray-400">Recruitment</Link></li> {/* Recruitment link */}
           </ul>
         </div>
       </div>

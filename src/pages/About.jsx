@@ -68,32 +68,32 @@ function About() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
             <img src={teamMember1} alt="Team Member 1" className="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 className="text-2xl font-bold text-gray-800"><Link to="/teams/hanan">Hanan Hussen</Link></h3>
+            <h3 className="text-2xl font-bold text-gray-800"><Link to="/en/teams/hanan">Hanan Hussen</Link></h3>
             <p className="text-gray-600">Owner</p>
           </div>
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
             <img src={teamMember2} alt="Team Member 2" className="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 className="text-2xl font-bold text-gray-800"><Link to="/teams/abdurezaq">Abdurezaq Akmel</Link></h3>
+            <h3 className="text-2xl font-bold text-gray-800"><Link to="/en/teams/abdurezaq">Abdurezaq Akmel</Link></h3>
             <p className="text-gray-600">Agent</p>
           </div>
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
             <img src={teamMember3} alt="Team Member 3" className="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 className="text-2xl font-bold text-gray-800"><Link to="/teams/roman">Roman Akmel</Link></h3>
+            <h3 className="text-2xl font-bold text-gray-800"><Link to="/en/teams/roman">Roman Akmel</Link></h3>
             <p className="text-gray-600">Manager</p>
           </div>
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
             <img src={teamMember3} alt="Team Member 3" className="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 className="text-2xl font-bold text-gray-800"><Link to="/teams/imamudin">Imamudin Akmel</Link></h3>
+            <h3 className="text-2xl font-bold text-gray-800"><Link to="/en/teams/imamudin">Imamudin Akmel</Link></h3>
             <p className="text-gray-600">Unknown</p>
           </div>
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
             <img src={teamMember3} alt="Team Member 3" className="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 className="text-2xl font-bold text-gray-800"><Link to="/teams/muhammed">Muhammed Seid</Link></h3>
+            <h3 className="text-2xl font-bold text-gray-800"><Link to="/en/teams/muhammed">Muhammed Seid</Link></h3>
             <p className="text-gray-600">IT Man</p>
           </div>
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
             <img src={teamMember3} alt="Team Member 3" className="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 className="text-2xl font-bold text-gray-800"><Link to="/teams/ezedin">Ezedin Nigussie</Link></h3>
+            <h3 className="text-2xl font-bold text-gray-800"><Link to="/en/teams/ezedin">Ezedin Nigussie</Link></h3>
             <p className="text-gray-600">UnKnown</p>
           </div>
           {/* Add more team members as needed */}
