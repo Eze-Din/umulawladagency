@@ -5,14 +5,14 @@ import 'slick-carousel/slick/slick-theme.css';
 
 // Import partner logos
 import logo1 from '../assets//images/easyenjaz.jpg';
-import logo2 from '../assets/images/comp2.jpg';
+import logo2 from '../assets/images/mofa.png';
 import logo3 from '../assets/images/comp3.jpg';
 import logo4 from '../assets/images/umulogo.png';
 // Add more imports as needed
 
 const partnerLogos = [
   { imgSrc: logo1, url: 'https://easyenjaz.net' }, // Example URL
-  { imgSrc: logo2, url: 'https://www.partner2.com' }, // Example URL
+  { imgSrc: logo2, url: 'https://visa.mofa.com' }, // Example URL
   { imgSrc: logo3, url: 'https://www.partner3.com' }, // Example URL
   { imgSrc: logo4, url: 'https://www.partner4.com' }, // Example URL
   // Add more logos and URLs as needed
