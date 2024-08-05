@@ -1,0 +1,95 @@
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HeaderTop from './components/HeaderTop';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Recruitment from './pages/Recruitment';
+import Gallery from './pages/Gallery';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import GoUpButton from './components/GoUpButton';
+import Hanan from './pages/teams/hanan';
+import Abdurezaq from './pages/teams/abdurezaq';
+import Roman from './pages/teams/roman';
+import Imamudin from './pages/teams/imamudin';
+import Muhammed from './pages/teams/muhammed';
+import Ezedin from './pages/teams/ezedin';
+import ArHeaderTop from './ar/components/ArHeaderTop';
+import ArNavbar from './ar/components/ArNavbar';
+import ArFooter from './ar/components/ArFooter';
+import ArHome from './ar/pages/ArHome';
+import ArServices from './ar/pages/ArServices';
+import ArRecruitment from './ar/pages/ArRecruitment';
+import ArGallery from './ar/pages/ArGallery';
+import ArAbout from './ar/pages/ArAbout';
+import ArContact from './ar/pages/ArContact';
+import ArGoUpButton from './ar/components/ArGoUpButton';
+import ArHanan from './ar/pages/teams/ArHanan';
+import ArAbdurezaq from './ar/pages/teams/ArAbdurezaq';
+import ArRoman from './ar/pages/teams/ArRoman';
+import ArImamudin from './ar/pages/teams/ArImamudin';
+import ArMuhammed from './ar/pages/teams/ArMuhammed';
+import ArEzedin from './ar/pages/teams/ArEzedin';
+import LanguageContext from './LanguageContext';
+import './styles/index.css';
+
+function App() {
+  const [language, setLanguage] = useState('en');
+
+  const toggleLanguage = () => {
+    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'ar' : 'en'));
+  };
+  return (
+    <LanguageContext.Provider value={{ language, toggleLanguage }}>
+      <Router>
+        <div className={language === 'en' ? 'ltr' : 'rtl'}>
+          <div className="flex flex-col min-h-screen bg-gray-600">
+            {language === 'en' ? <HeaderTop /> : <ArHeaderTop />}
+            {language === 'en' ? <Navbar /> : <ArNavbar />}
+            <main className="flex-grow pt-2"> {/* Add padding-top to avoid content hiding under fixed Navbar */}
+              <Routes>
+                {language === 'en' ? (
+                  <>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/services" element={<Services />} />
+                    <Route path="/recruitment" element={<Recruitment />} />
+                    <Route path="/gallery" element={<Gallery />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path='/teams/hanan' element={<Hanan />} />
+                    <Route path='/teams/abdurezaq' element={<Abdurezaq />} />
+                    <Route path='/teams/roman' element={<Roman />} />
+                    <Route path='/teams/imamudin' element={<Imamudin />} />
+                    <Route path='/teams/muhammed' element={<Muhammed />} />
+                    <Route path='/teams/ezedin' element={<Ezedin />} />
+                  </>
+                ) : (
+                  <>
+                    <Route path="/ar" element={<ArHome />} />
+                    <Route path="/ar/arservices" element={<ArServices />} />
+                    <Route path="/ar/arrecruitment" element={<ArRecruitment />} />
+                    <Route path="/ar/argallery" element={<ArGallery />} />
+                    <Route path="/ar/arabout" element={<ArAbout />} />
+                    <Route path="/ar/arcontact" element={<ArContact />} />
+                    <Route path='/ar/teams/arhanan' element={<ArHanan />} />
+                    <Route path='/ar/teams/arabdurezaq' element={<ArAbdurezaq />} />
+                    <Route path='/ar/teams/arroman' element={<ArRoman />} />
+                    <Route path='/ar/teams/arimamudin' element={<ArImamudin />} />
+                    <Route path='/ar/teams/armuhammed' element={<ArMuhammed />} />
+                    <Route path='/ar/teams/arezedin' element={<ArEzedin />} />
+                  </>
+                )}
+              </Routes>
+            </main>
+            {language === 'en' ? <Footer /> : <ArFooter />}
+            {language === 'en' ? <GoUpButton /> : <ArGoUpButton />}
+          </div>
+        </div>
+      </Router>
+    </LanguageContext.Provider>
+  );
+}
+
+export default App;

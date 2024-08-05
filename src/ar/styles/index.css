@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Gold Color */
+.text-gold-500 {
+  color: #D4AF37; /* Gold color */
+}
+.bg-gold-500 {
+  background-color: #D4AF37; /* Gold color */
+}
+
+/* Responsive Utility Extensions (optional) */
