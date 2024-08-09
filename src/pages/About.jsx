@@ -8,7 +8,7 @@ import teamMember3 from '../assets/images/exp3.jpg';
 
 function About() {
   return (
-    <div className="about-page bg-gray-600">
+    <div className="about-page bg-gray-600" data-aos="fade-left">
       {/* Hero Section */}
       <div className="hero-section relative bg-cover bg-center h-64">
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-gold-500">
@@ -20,7 +20,7 @@ function About() {
       </div>
 
       {/* Mission, Vision, Values Section */}
-      <div className="container mx-auto py-16 px-4">
+      <div className="container mx-auto py-16 px-4" data-aos="fade-left">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 bg-gray-500 rounded-lg shadow-md">
             <h2 className="text-3xl font-bold text-gold-500 mb-4">Our Mission</h2>
@@ -48,7 +48,7 @@ function About() {
       </div>
 
       {/* History/Story Section */}
-      <div className="bg-gray-500 py-16">
+      <div className="bg-gray-500 py-16" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-gold-500 mb-6">Our Story</h2>
@@ -63,7 +63,7 @@ function About() {
       </div>
 
       {/* Team Section */}
-      <div className="container mx-auto py-16 px-4 bg-gray-500">
+      <div className="container mx-auto py-16 px-4 bg-gray-500" data-aos="fade-up">
         <h2 className="text-4xl font-bold text-gold-500 mb-8 text-center">Meet Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
@@ -101,7 +101,7 @@ function About() {
       </div>
 
       {/* Call-to-Action Section */}
-      <div className="bg-gray-600 py-16">
+      <div className="bg-gray-600 py-16" data-aos="fade-up">
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
           <p className="text-lg mb-8">

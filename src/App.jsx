@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
-import Confetti from "react-confetti";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import SplashScreen from './components/SplashScreen';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Recruitment from './pages/Recruitment';
@@ -46,31 +48,25 @@ function App() {
 const MainApp = () => {
   const location = useLocation();
   const isArabic = location.pathname.startsWith("/ar");
-  const [showConfetti, setShowConfetti] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (!loading) {
+      AOS.init({
+        duration: 2000, // Animation duration
+        once: true,     // Whether animation should happen only once
+      });
+    }
+  }, [loading]);
 
-    const timer = setTimeout(() => {
-      setShowConfetti(false);
-    }, 5000);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
+  if (loading) {
+    return <SplashScreen setLoading={setLoading} />;
+  }
 
   return (
     <div className={isArabic ? "rtl" : "ltr"}>
       <div className="flex flex-col min-h-screen bg-gray-600">
-        {showConfetti && (
-          <Confetti
-            width={window.innerWidth}
-            height={window.innerHeight}
-            numberOfPieces={1000}
-            gravity={0.3}
-            colors={['#a4cF37', '#ff477e', '#D4AF37', '#ff85a1', '#bff4d7']}
-          />
-        )}
+        
         {isArabic ? <ArHeaderTop /> : <HeaderTop />}
         {isArabic ? <ArNavbar /> : <Navbar />}
         <main className="flex-grow pt-2">

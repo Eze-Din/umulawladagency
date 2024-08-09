@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom Gold Color */
 .text-gold-500 {
   color: #D4AF37; /* Gold color */
@@ -10,6 +14,7 @@
   background-color: #D4AF37; /* Gold color */
 }
 
+/* Dual Direction */
 .rtl {
   direction: rtl;
   text-align: right;
@@ -19,3 +24,24 @@
   direction: ltr;
   text-align: left;
 }
+
+/* Splash Screen / Screen Loader */
+.splash-screen {
+  background-color: #000; /* You can adjust the background color */
+}
+
+.rotating-logo {
+  width: 100px;  /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import FilterablePeopleSection from '../components/FilterablePeopleSection';
 import ServiceCard from '../components/ServiceCard';
+import StatesSection from '../components/StatesSection';
 import TeamCard from '../components/TeamCard';
+import FAQ from '../components/FAQ';
 import PartnersCarousel from '../components/PartnersCarousel';
 // Import images
 import ImageCarousel from '../components/ImageCarousel';
@@ -19,25 +21,27 @@ function Home() {
       <ImageCarousel />
       </section>
 
-      <div className="bg-gray-500 p-8 rounded-lg shadow-md text-center md:text-left">
-        <h1 className="text-3xl font-bold text-gold-500 mb-4">MAIDS WITH EASE...</h1>
-        <h2 className="text-2xl font-bold text-gold-500 mb-4">FIND ETHIOPIAN MAIDS WITH EASE!</h2>
-        <p className="text-gray-900 mb-6">
-        Ethiopia`s best agency for housemaids, caregivers, drivers, and nannies. Simplify hiring online. #ManpowerEthiopia
-        </p>
-        <a href="https://wa.me/251914266446" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-gold-500 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-gold-600 transition duration-300">
-          <img src={WhatsAppIcon} alt="WhatsApp" className="h-6 w-6 mr-2" />
-          Start Now!
-        </a>
-      </div>
+      <section data-aos="fade-up">
+        <div className="bg-gray-500 p-8 rounded-lg shadow-md text-center md:text-left">
+          <h1 className="text-3xl font-bold text-gold-500 mb-4">MAIDS WITH EASE...</h1>
+          <h2 className="text-2xl font-bold text-gold-500 mb-4">FIND ETHIOPIAN MAIDS WITH EASE!</h2>
+          <p className="text-gray-900 mb-6">
+          Ethiopia`s best agency for housemaids, caregivers, drivers, and nannies. Simplify hiring online. #ManpowerEthiopia
+          </p>
+          <a href="https://wa.me/251914266446" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-gold-500 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-gold-600 transition duration-300">
+            <img src={WhatsAppIcon} alt="WhatsApp" className="h-6 w-6 mr-2" />
+            Start Now!
+          </a>
+        </div>
 
-      {/* Filterable People Section */}
-      <div className="bg-gray-500">
-        <FilterablePeopleSection />
-      </div>
+        {/* Filterable People Section */}
+        <div className="bg-gray-500">
+          <FilterablePeopleSection />
+        </div>
+      </section>
 
       {/* Recruitment Process Section */}
-      <section className="py-16 bg-gray-500">
+      <section className="py-16 bg-gray-500" data-aos="fade-left">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">Recruitment Process</h2>
           <p className="text-gray-700 mb-8">
@@ -50,7 +54,7 @@ function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-gray-400">
+      <section className="py-16 bg-gray-500" data-aos="fade-up">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -60,10 +64,11 @@ function Home() {
             <ServiceCard image={expert1Image} title="Flexible contracts​" description="We have flexible type of contract  that suits our customers and that address the right situations of our clients." />
           </div>
         </div>
+        <StatesSection />
       </section>
 
       {/* Our Team of Experts Section */}
-      <section className="py-16 bg-gray-300">
+      <section className="py-16 bg-gray-500" data-aos="fade-up">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">Our Team of Experts</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -77,8 +82,12 @@ function Home() {
         </div>
       </section>
 
+      <section className="bg-gray-500">
+        <FAQ />
+      </section>
+
       {/* Our Partners Section */}
-      <section className="py-16 bg-gray-200">
+      <section className="py-16 bg-gray-500">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">Our Partners</h2>
           <PartnersCarousel />
