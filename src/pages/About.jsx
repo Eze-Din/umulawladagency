@@ -107,7 +107,7 @@ function About() {
           <p className="text-lg mb-8">
             We are here to help you with all your domestic employment needs. Contact us today to learn more about our services and how we can assist you.
           </p>
-          <Link to="/contact" className="bg-gold-600 text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-gold-500">
+          <Link to="/en/contact" className="bg-gold-600 text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-gold-500">
             Contact Us
           </Link>
         </div>

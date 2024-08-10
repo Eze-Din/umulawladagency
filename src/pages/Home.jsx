@@ -82,6 +82,7 @@ function Home() {
         </div>
       </section>
 
+      {/* Frequently Asked Questions */}
       <section className="bg-gray-500">
         <FAQ />
       </section>

@@ -10,7 +10,7 @@ function ArAbout() {
   return (
     <div className="about-page bg-gray-600">
       {/* Hero Section */}
-      <div className="hero-section relative bg-cover bg-center h-64">
+      <div className="hero-section relative bg-cover bg-center h-64" data-aos="fade-left">
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-gold-500">
           <h1 className="text-5xl font-bold mb-4">معلومات عنا</h1>
           <p className="text-lg max-w-xl">
@@ -20,7 +20,7 @@ function ArAbout() {
       </div>
 
       {/* Mission, Vision, Values Section */}
-      <div className="container mx-auto py-16 px-4">
+      <div className="container mx-auto py-16 px-4" data-aos="fade-left">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 bg-gray-500 rounded-lg shadow-md">
             <h2 className="text-3xl font-bold text-gold-500 mb-4">مهمتنا</h2>
@@ -48,7 +48,7 @@ function ArAbout() {
       </div>
 
       {/* History/Story Section */}
-      <div className="bg-gray-500 py-16">
+      <div className="bg-gray-500 py-16" data-aos="fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-gold-500 mb-6">تاريخنا</h2>
@@ -63,7 +63,7 @@ function ArAbout() {
       </div>
 
       {/* Team Section */}
-      <div className="container mx-auto py-16 px-4 bg-gray-500">
+      <div className="container mx-auto py-16 px-4 bg-gray-500" data-aos="fade-up">
         <h2 className="text-4xl font-bold text-gold-500 mb-8 text-center">التق بفريقنا</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
@@ -101,13 +101,13 @@ function ArAbout() {
       </div>
 
       {/* Call-to-Action Section */}
-      <div className="bg-gray-600 py-16">
+      <div className="bg-gray-600 py-16" data-aos="fade-up">
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="text-4xl font-bold mb-4">ابقى على تواصل</h2>
           <p className="text-lg mb-8">
           نحن هنا لمساعدتك في كل ما يتعلق باحتياجاتك من العمالة المنزلية. اتصل بنا اليوم لمعرفة المزيد عن خدماتنا وكيف يمكننا مساعدتك.
           </p>
-          <Link to="/ar/arcontact" className="bg-gold-600 text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-gold-500">
+          <Link to="/ar/contact" className="bg-gold-600 text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-gold-500">
           اتصل بنا
           </Link>
         </div>

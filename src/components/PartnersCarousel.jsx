@@ -4,17 +4,21 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // Import partner logos
-import logo1 from '../assets//images/easyenjaz.jpg';
+import logo1 from '../assets//images/easyenjaz.png';
 import logo2 from '../assets/images/mofa.png';
-import logo3 from '../assets/images/comp3.jpg';
-import logo4 from '../assets/images/umulogo.png';
+import logo3 from '../assets/images/lmis.png';
+import logo4 from '../assets/images/musaned.png';
+import logo5 from '../assets/images/nyala.png';
+import logo6 from '../assets/images/eff.png';
 // Add more imports as needed
 
 const partnerLogos = [
-  { imgSrc: logo1, url: 'https://easyenjaz.net' }, // Example URL
-  { imgSrc: logo2, url: 'https://visa.mofa.com' }, // Example URL
-  { imgSrc: logo3, url: 'https://www.partner3.com' }, // Example URL
-  { imgSrc: logo4, url: 'https://www.partner4.com' }, // Example URL
+  { imgSrc: logo1, url: 'https://easyenjaz.net' },
+  { imgSrc: logo2, url: 'https://visa.mofa.com' },
+  { imgSrc: logo3, url: 'https://lmis.gov.et' },
+  { imgSrc: logo4, url: 'https://tawtheeq.musaned.com.sa' },
+  { imgSrc: logo5, url: 'https://nyalainsurancesc.com' },
+  { imgSrc: logo6, url: 'https://federalpolice.gov.et' },
   // Add more logos and URLs as needed
 ];
 

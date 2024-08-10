@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div className="contact-page bg-gray-600">
       {/* Hero Section */}
-      <div className="hero-section relative bg-cover bg-center h-64">
+      <div className="hero-section relative bg-cover bg-center h-64" data-aos="fade-left">
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-gold-500">
           <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-lg max-w-xl">
@@ -17,13 +17,13 @@ function Contact() {
       </div>
 
       {/* Contact Form Section */}
-      <div className="container mx-auto py-16 px-4">
+      <div className="container mx-auto py-16 px-4" data-aos="fade-left">
         <h2 className="text-4xl font-bold text-gold-500 mb-8 text-center">Send Us a Message</h2>
         <ContactForm />
       </div>
 
       {/* Contact Details Section */}
-      <div className="bg-gray-500 py-16 rounded-lg">
+      <div className="bg-gray-500 py-16 rounded-lg" data-aos="fade-up">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-gold-500 mb-8">Contact Details</h2>
           <p className="text-lg text-gray-700 mb-4">

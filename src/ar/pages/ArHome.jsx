@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import FilterablePeopleSection from '../components/ArFilterablePeopleSection';
 import ServiceCard from '../components/ArServiceCard'; // Import ServiceCard component
+import ArStatesSection from '../components/ArStatesSection';
 import TeamCard from '../components/ArTeamCard'; // Import TeamCard component
+import ArFAQ from '../components/ArFAQ';
 import PartnersCarousel from '../components/ArPartnersCarousel'; // Import PartnersCarousel component
 // Import images
 import ImageCarousel from '../components/ArImageCarousel';
@@ -19,25 +21,27 @@ function ArHome() {
       <ImageCarousel />
       </section>
 
-      <div className="bg-gray-500 p-8 rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold text-gold-500 mb-4">الخادمات بكل سهولة...</h1>
-        <h2 className="text-2xl font-bold text-gold-500 mb-4">ابحث عن الخادمات الإثيوبيات بسهولة!</h2>
-        <p className="text-gray-900 mb-6">
-        أفضل وكالة في إثيوبيا للخادمات ومقدمي الرعاية والسائقين والمربيات. تبسيط التوظيف عبر الإنترنت. #القوى العاملة في إثيوبيا
-        </p>
-        <a href="https://wa.me/251914266446" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-gold-500 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-gold-600 transition duration-300">
-          <img src={WhatsAppIcon} alt="WhatsApp" className="h-6 w-6 mr-2" />
-          ابدأ الآن!
-        </a>
-      </div>
+      <section data-aos="fade-up">
+        <div className="bg-gray-500 p-8 rounded-lg shadow-md">
+          <h1 className="text-3xl font-bold text-gold-500 mb-4">الخادمات بكل سهولة...</h1>
+          <h2 className="text-2xl font-bold text-gold-500 mb-4">ابحث عن الخادمات الإثيوبيات بسهولة!</h2>
+          <p className="text-gray-900 mb-6">
+          أفضل وكالة في إثيوبيا للخادمات ومقدمي الرعاية والسائقين والمربيات. تبسيط التوظيف عبر الإنترنت. #القوى العاملة في إثيوبيا
+          </p>
+          <a href="https://wa.me/251914266446" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-gold-500 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-gold-600 transition duration-300">
+            <img src={WhatsAppIcon} alt="WhatsApp" className="h-6 w-6 mr-2" />
+            ابدأ الآن!
+          </a>
+        </div>
 
-      {/* Filterable People Section */}
-      <div className="bg-gray-500">
-        <FilterablePeopleSection />
-      </div>
+        {/* Filterable People Section */}
+        <div className="bg-gray-500">
+          <FilterablePeopleSection />
+        </div>
+      </section>
 
       {/* Recruitment Process Section */}
-      <section className="py-16 bg-gray-500">
+      <section className="py-16 bg-gray-500" data-aos="fade-left">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">عملية التوظيف</h2>
           <p className="text-gray-700 mb-8">
@@ -50,7 +54,7 @@ function ArHome() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-gray-400">
+      <section className="py-16 bg-gray-500" data-aos="fade-up">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">خدماتنا</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -60,10 +64,11 @@ function ArHome() {
             <ServiceCard image={expert1Image} title="عقود مرنة​" description="لدينا نوع مرن من العقود التي تناسب عملائنا والتي تعالج المواقف المناسبة لعملائنا" />
           </div>
         </div>
+        <ArStatesSection />
       </section>
 
       {/* Our Team of Experts Section */}
-      <section className="py-16 bg-gray-300">
+      <section className="py-16 bg-gray-500" data-aos="fade-up">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">فريق الخبراء لدينا</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -77,8 +82,13 @@ function ArHome() {
         </div>
       </section>
 
+      {/* Frequently Asked Questions */}
+      <section className="bg-gray-500">
+        <ArFAQ />
+      </section>
+
       {/* Our Partners Section */}
-      <section className="py-16 bg-gray-200">
+      <section className="py-16 bg-gray-500">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">شركاؤنا</h2>
           <PartnersCarousel />

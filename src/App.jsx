@@ -34,6 +34,7 @@ import ArHeaderTop from './ar/components/ArHeaderTop';
 import ArNavbar from './ar/components/ArNavbar';
 import ArFooter from './ar/components/ArFooter';
 import GoUpButton from './components/GoUpButton';
+import ErrorPage from "./components/ErrorPage";
 import './styles/index.css';
 
 function App() {
@@ -70,33 +71,41 @@ const MainApp = () => {
         {isArabic ? <ArHeaderTop /> : <HeaderTop />}
         {isArabic ? <ArNavbar /> : <Navbar />}
         <main className="flex-grow pt-2">
-          <Routes>
-            <Route path="/" element={<Navigate to="/en/" />} />
-            <Route path="/en/" element={<Home />} />
-            <Route path="/en/services" element={<Services />} />
-            <Route path="/en/recruitment" element={<Recruitment />} />
-            <Route path="/en/gallery" element={<Gallery />} />
-            <Route path="/en/about" element={<About />} />
-            <Route path="/en/contact" element={<Contact />} />
-            <Route path='/en/teams/hanan' element={<Hanan />} />
-            <Route path='/en/teams/abdurezaq' element={<Abdurezaq />} />
-            <Route path='/en/teams/roman' element={<Roman />} />
-            <Route path='/en/teams/imamudin' element={<Imamudin />} />
-            <Route path='/en/teams/muhammed' element={<Muhammed />} />
-            <Route path='/en/teams/ezedin' element={<Ezedin />} />
-            <Route path="/ar/" element={<ArHome />} />
-            <Route path="/ar/services" element={<ArServices />} />
-            <Route path="/ar/recruitment" element={<ArRecruitment />} />
-            <Route path="/ar/gallery" element={<ArGallery />} />
-            <Route path="/ar/about" element={<ArAbout />} />
-            <Route path="/ar/contact" element={<ArContact />} />
-            <Route path='/ar/teams/hanan' element={<ArHanan />} />
-            <Route path='/ar/teams/abdurezaq' element={<ArAbdurezaq />} />
-            <Route path='/ar/teams/roman' element={<ArRoman />} />
-            <Route path='/ar/teams/imamudin' element={<ArImamudin />} />
-            <Route path='/ar/teams/muhammed' element={<ArMuhammed />} />
-            <Route path='/ar/teams/ezedin' element={<ArEzedin />} />
-          </Routes>
+        <Routes>
+          {/* Default Redirect */}
+          <Route path="/" element={<Navigate to="/en/" />} />
+
+          {/* English Routes */}
+          <Route path="/en/" element={<Home />} />
+          <Route path="/en/services" element={<Services />} />
+          <Route path="/en/recruitment" element={<Recruitment />} />
+          <Route path="/en/gallery" element={<Gallery />} />
+          <Route path="/en/about" element={<About />} />
+          <Route path="/en/contact" element={<Contact />} />
+          <Route path="/en/teams/hanan" element={<Hanan />} />
+          <Route path="/en/teams/abdurezaq" element={<Abdurezaq />} />
+          <Route path="/en/teams/roman" element={<Roman />} />
+          <Route path="/en/teams/imamudin" element={<Imamudin />} />
+          <Route path="/en/teams/muhammed" element={<Muhammed />} />
+          <Route path="/en/teams/ezedin" element={<Ezedin />} />
+
+          {/* Arabic Routes */}
+          <Route path="/ar/" element={<ArHome />} />
+          <Route path="/ar/services" element={<ArServices />} />
+          <Route path="/ar/recruitment" element={<ArRecruitment />} />
+          <Route path="/ar/gallery" element={<ArGallery />} />
+          <Route path="/ar/about" element={<ArAbout />} />
+          <Route path="/ar/contact" element={<ArContact />} />
+          <Route path="/ar/teams/hanan" element={<ArHanan />} />
+          <Route path="/ar/teams/abdurezaq" element={<ArAbdurezaq />} />
+          <Route path="/ar/teams/roman" element={<ArRoman />} />
+          <Route path="/ar/teams/imamudin" element={<ArImamudin />} />
+          <Route path="/ar/teams/muhammed" element={<ArMuhammed />} />
+          <Route path="/ar/teams/ezedin" element={<ArEzedin />} />
+
+          {/* 404 Route */}
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
         </main>
         {isArabic ? <ArFooter /> : <Footer />}
         <GoUpButton />
