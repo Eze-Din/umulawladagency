@@ -138,48 +138,49 @@ function FilterablePeopleSection() {
       <div className="w-full md:w-2/3">
         {filteredPeople.length > 0 ? (
           filteredPeople.map((person) => (
-            <div key={person.id} className="flex flex-col md:flex-row bg-gray-600 dark:bg-gray-700 p-4 rounded-lg shadow-lg mb-4">
-              <div className="md:w-1/3 relative">
-                <img src={person.photo} alt={person.name} className="w-full h-auto rounded-lg mb-4 md:mb-0 md:mr-4" />
-                <button
-                  onClick={() => toggleFavorite(person.id)}
-                  className="absolute top-4 right-4 text-white bg-red-500 p-2 rounded-full"
-                >
-                  {favorites.includes(person.id) ? <FaHeart size={20} /> : <FaRegHeart size={20} />}
-                </button>
+            <Accordion key={person.id} title={person.name}>
+              <div className="flex flex-col md:flex-row bg-gray-600 dark:bg-gray-700 p-4 rounded-lg shadow-lg mb-4">
+                <div className="md:w-1/3 relative">
+                  <img src={person.photo} alt={person.name} className="w-full h-auto rounded-lg mb-4 md:mb-0 md:mr-4" />
+                  <button
+                    onClick={() => toggleFavorite(person.id)}
+                    className="absolute top-4 right-4 text-white bg-red-500 p-2 rounded-full"
+                  >
+                    {favorites.includes(person.id) ? <FaHeart size={20} /> : <FaRegHeart size={20} />}
+                  </button>
+                </div>
+                <div className="md:w-2/3 px-4">
+                  <p className="text-gold-600 dark:text-gold-400 mb-2"><strong>Spoken Language:</strong> {person.language}</p>
+                  <p className="text-gold-600 dark:text-gold-400 mb-2"><strong>Age:</strong> {person.ages}</p>
+                  <p className="text-gold-600 dark:text-gold-400 mb-2"><strong>Martial Status:</strong> {person.martial}</p>
+                  <p className="text-gold-600 dark:text-gold-400 mb-2"><strong>Experience:</strong> {person.experience}</p>
+                  <p className="text-gold-600 dark:text-gold-400 mb-2"><strong>Religion:</strong> {person.religion}</p>
+                  <p className="text-gold-600 dark:text-gold-400"><strong>Skilled As:</strong> {person.skill}</p>
+                  <a
+                    href={`https://wa.me/251914266446?text=Hello, I am interested in ${person.name}'s profile.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block px-4 py-2 text-white bg-green-500 rounded-full hover:bg-green-600"
+                  >
+                    Hire Me
+                  </a>
+                  <a
+                    href={`${person.pdf}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block px-4 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 ml-2"
+                  >
+                    View CV
+                  </a>
+                </div>
               </div>
-              <div className="md:w-2/3 px-4">
-                <h3 className="text-xl font-bold mb-2 text-gold-600 dark:text-gold-400">{person.name}</h3>
-                <p className="text-gold-600 dark:text-gold-400 mb-2"><strong>Spoken Language:</strong> {person.language}</p>
-                <p className="text-gold-600 dark:text-gold-400 mb-2"><strong>Age:</strong> {person.ages}</p>
-                <p className="text-gold-600 dark:text-gold-400 mb-2"><strong>Martial Status:</strong> {person.martial}</p>
-                <p className="text-gold-600 dark:text-gold-400 mb-2"><strong>Experience:</strong> {person.experience}</p>
-                <p className="text-gold-600 dark:text-gold-400 mb-2"><strong>Religion:</strong> {person.religion}</p>
-                <p className="text-gold-600 dark:text-gold-400"><strong>Skilled As:</strong> {person.skill}</p>
-                <a
-                  href={`https://wa.me/251914266446?text=Hello, I am interested in ${person.name}'s profile.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-block px-4 py-2 text-white bg-green-500 rounded-full hover:bg-green-600"
-                >
-                  Hire Me
-                </a>
-                <a
-                  href={`${person.pdf}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-block px-4 py-2 text-white bg-blue-500 rounded-full hover:bg-blue-600 ml-2"
-                >
-                  View CV
-                </a>
-              </div>
-            </div>
+            </Accordion>
           ))
         ) : (
           <div className="text-center text-gold-600 dark:text-gold-400 font-bold">No matching people found.</div>
         )}
         <div className="flex justify-center mt-8">
-          <Link to="/en/recruitment" className="mt-2 inline-block px-4 py-2 text-white bg-gold-600 w-full rounded-full hover:bg-gold-700 font-bold text-center">
+          <Link to="/en/recruitment" className="mt-2 inline-block px-4 py-2 text-white bg-gray-800 w-full rounded-full hover:bg-gold-700 font-bold text-center">
             See More
           </Link>
         </div>
@@ -195,7 +196,7 @@ function Accordion({ title, children }) {
     <div className="mb-4">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-between w-full px-4 py-2 text-lg font-semibold text-gray-900 bg-gold-600 dark:bg-gold-400 rounded-lg focus:outline-none transition-all duration-300"
+        className="flex items-center justify-between w-full px-4 py-2 text-lg font-semibold text-gray-900 bg-gray-700 dark:bg-gold-400 rounded-lg focus:outline-none transition-all duration-300"
       >
         <span>{title}</span>
         <ChevronDownIcon

@@ -57,7 +57,7 @@ function Home() {
       <section className="py-16 bg-gray-500" data-aos="fade-up">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2">
             <ServiceCard image={expert1Image} title="Claim Followup" description="We follow up and supervise different issues related to the employees who are recruited via our agency" />
             <ServiceCard image={expert2Image} title="Health Insurance" description="Our customers are made sure that they have their health insurance covered." />
             <ServiceCard image={expert3Image} title="Multiple Countries" description="Currently we are working with the Kingdom of Saudi Arabia, United Arab Emirates and Jordan. We will expand soon to other places." />
@@ -68,10 +68,10 @@ function Home() {
       </section>
 
       {/* Our Team of Experts Section */}
-      <section className="py-16 bg-gray-500" data-aos="fade-up">
+      <section className="py-4 bg-gray-500" data-aos="fade-up">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">Our Team of Experts</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2">
             <TeamCard name={<Link to="/en/teams/hanan">Hanan Hussen</Link>} role="Owner" image={expert1Image} /> {/* Use imported image */}
             <TeamCard name={<Link to="/en/teams/abdurezaq">Abdurezaq Akmel</Link>} role="Agent" image={expert2Image} /> {/* Use imported image */}
             <TeamCard name={<Link to="/en/teams/roman">Roman Akmel</Link>} role="Manager" image={expert3Image} /> {/* Use imported image */}

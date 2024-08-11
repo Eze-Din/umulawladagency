@@ -57,7 +57,7 @@ function ArHome() {
       <section className="py-16 bg-gray-500" data-aos="fade-up">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">خدماتنا</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2">
             <ServiceCard image={expert1Image} title="متابعة المطالبة" description="نقوم بمتابعة والإشراف على مختلف القضايا المتعلقة بالموظفين الذين يتم توظيفهم عن طريق وكالتنا" />
             <ServiceCard image={expert2Image} title="تأمين صحي" description="نتأكد من أن عملائنا يتمتعون بالتأمين الصحي" />
             <ServiceCard image={expert3Image} title="بلدان متعددة" description="نحن نعمل حاليًا مع المملكة العربية السعودية والإمارات العربية المتحدة والأردن، وسنتوسع قريبًا إلى أماكن أخرى" />
@@ -68,10 +68,10 @@ function ArHome() {
       </section>
 
       {/* Our Team of Experts Section */}
-      <section className="py-16 bg-gray-500" data-aos="fade-up">
+      <section className="py-4 bg-gray-500" data-aos="fade-up">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">فريق الخبراء لدينا</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2">
             <TeamCard name={<Link to="/ar/teams/hanan">Hanan Hussen</Link>} role="Owner" image={expert1Image} /> {/* Use imported image */}
             <TeamCard name={<Link to="/ar/teams/abdurezaq">Abdurezaq Akmel</Link>} role="Agent" image={expert2Image} /> {/* Use imported image */}
             <TeamCard name={<Link to="/ar/teams/roman">Roman Akmel</Link>} role="Manager" image={expert3Image} /> {/* Use imported image */}
