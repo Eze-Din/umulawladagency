@@ -7,14 +7,14 @@ import WhatsAppIcon from '../../assets/images/whatsapp.png';
 
 // Sample data for people (this would typically come from a database or API)
 const people = [
-  { id: 1, name: 'John Doe', age: '20-30', ages: 23, martial: 'Single', skill: 'House Maid', experience: '2-5 years', language: 'English', religion: 'Christian', photo: expert1Image, pdf: per1Pdf },
-  { id: 2, name: 'Jane Smith', age: '31-40', ages: 31, martial: 'Single', skill: 'House Maid', experience: '5-10 years', language: 'Amharic', religion: 'Muslim', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1UxPoIa5ltdnCxiJBuxQn2NLqyx3aDADT/view?usp=sharing' },
-  { id: 3, name: 'Eze Din', age: '41-50', ages: 45, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert3Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
-  { id: 4, name: 'Mame', age: '20-30', ages: 27, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
-  { id: 5, name: 'Hanan', age: '20-30', ages: 29, martial: 'Married', skill: 'House Maid', experience: '2-5 years', language: 'English', religion: 'Christian', photo: expert1Image, pdf: per1Pdf },
-  { id: 6, name: 'Hayat', age: '31-40', ages: 38, martial: 'Single', skill: 'House Maid', experience: '10-20 years', language: 'Amharic', religion: 'Muslim', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1UxPoIa5ltdnCxiJBuxQn2NLqyx3aDADT/view?usp=sharing' },
-  { id: 7, name: 'Seble', age: '41-50', ages: 45, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert3Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
-  { id: 8, name: 'Jemila', age: '20-30', ages: 22, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
+  { id: 1, name: 'John Doe', passport: 'EP8544781', age: '20-30', ages: 23, martial: 'Single', skill: 'House Maid', experience: '2-5 years', language: 'English', religion: 'Christian', photo: expert1Image, pdf: per1Pdf },
+  { id: 2, name: 'Jane Smith', passport: 'EP8544782', age: '31-40', ages: 31, martial: 'Single', skill: 'House Maid', experience: '5-10 years', language: 'Amharic', religion: 'Muslim', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1UxPoIa5ltdnCxiJBuxQn2NLqyx3aDADT/view?usp=sharing' },
+  { id: 3, name: 'Eze Din', passport: 'EP8544783', age: '41-50', ages: 45, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert3Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
+  { id: 4, name: 'Mame', passport: 'EP8544784', age: '20-30', ages: 27, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
+  { id: 5, name: 'Hanan', passport: 'EP8544785', age: '20-30', ages: 29, martial: 'Married', skill: 'House Maid', experience: '2-5 years', language: 'English', religion: 'Christian', photo: expert1Image, pdf: per1Pdf },
+  { id: 6, name: 'Hayat', passport: 'EP8544786', age: '31-40', ages: 38, martial: 'Single', skill: 'House Maid', experience: '10-20 years', language: 'Amharic', religion: 'Muslim', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1UxPoIa5ltdnCxiJBuxQn2NLqyx3aDADT/view?usp=sharing' },
+  { id: 7, name: 'Seble', passport: 'EP8544787', age: '41-50', ages: 45, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert3Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
+  { id: 8, name: 'Jemila', passport: 'EP8544788', age: '20-30', ages: 22, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
   // Add more people as needed
 ];
 
@@ -32,6 +32,8 @@ function FilterablePeopleSections() {
     religion: '',
   });
 
+  const [searchTerm, setSearchTerm] = useState('');
+
   const handleFilterChange = (category, value) => {
     setSelectedFilters((prev) => ({
       ...prev,
@@ -46,15 +48,18 @@ function FilterablePeopleSections() {
       language: '',
       religion: '',
     });
+    setSearchTerm('');
   };
 
   const filteredPeople = people.filter((person) => {
-    return (
-      (selectedFilters.age === '' || selectedFilters.age === person.age) &&
-      (selectedFilters.experience === '' || selectedFilters.experience === person.experience) &&
-      (selectedFilters.language === '' || selectedFilters.language === person.language) &&
-      (selectedFilters.religion === '' || selectedFilters.religion === person.religion)
-    );
+    const matchesSearch = searchTerm === '' || person.passport.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesFilters =
+      (selectedFilters.age.length === 0 || selectedFilters.age.includes(person.age.toString())) &&
+      (selectedFilters.experience.length === 0 || selectedFilters.experience.includes(person.experience)) &&
+      (selectedFilters.language.length === 0 || selectedFilters.language.includes(person.language)) &&
+      (selectedFilters.religion.length === 0 || selectedFilters.religion.includes(person.religion));
+    
+    return matchesSearch && matchesFilters;
   });
 
   return (
@@ -124,8 +129,16 @@ function FilterablePeopleSections() {
             ))}
           </select>
         </div>
+        {/* Search Button */}
+        <input
+          type="text"
+          placeholder="البحث حسب رقم جواز السفر"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="w-60 md:w-1/3 p-2 rounded-lg text-gray-900"
+        />
         {/* Clear Selection Button */}
-        <div className="text-red mt-2">
+        <div className="text-white mt-2">
           <button
             onClick={clearFilters}
             className=""

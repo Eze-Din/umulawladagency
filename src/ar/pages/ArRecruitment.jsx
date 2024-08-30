@@ -37,14 +37,14 @@ function ArRecruitment() {
             <li>جمع الملاحظات: جمع الملاحظات من كل من صاحب العمل والمرشح لتحسين خدماتنا.</li>
             <li>الدعم: تقديم الدعم المستمر لحل أي مشكلات قد تنشأ أثناء فترة التوظيف.</li>
           </ul>
-          <h2 className="text-3xl text-center font-bold text-gold-500 mb-4">قم بتصفية رغبتك</h2>
-          <FilterablePeopleSections/>
-          <div className="flex justify-center mt-8">
-            <Link to="/ar" className="bg-gold-500 text-white px-3 py-1 mb-2 rounded-md text-lg hover:bg-gold-600">
-            العودة إلى الرئيسية
-            </Link>
-          </div>
         </div>
+      </div>
+      <h2 className="text-3xl text-center font-bold text-gold-500 mt-4 mb-4">قم بتصفية رغبتك</h2>
+      <FilterablePeopleSections/>
+      <div className="flex justify-center mt-8">
+        <Link to="/ar" className="bg-gold-500 text-white px-3 py-1 mb-2 rounded-md text-lg hover:bg-gold-600">
+        العودة إلى الرئيسية
+        </Link>
       </div>
     </div>
   );
