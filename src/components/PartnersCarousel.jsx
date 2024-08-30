@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 // Import partner logos
 import logo1 from '../assets//images/easyenjaz.png';
 import logo2 from '../assets/images/mofa.png';
-import logo3 from '../assets/images/lmis.png';
+import logo3 from '../assets/images/comp2.jpg';
 import logo4 from '../assets/images/musaned.png';
 import logo5 from '../assets/images/nyala.png';
 import logo6 from '../assets/images/eff.png';
