@@ -1,5 +1,5 @@
 import React from 'react'
-import imamudinImg from '../../assets/images/imamudin.png';
+import imamudinImg from '../../../assets/images/imamudin.png';
 
 function ArImamudin() {
   return (

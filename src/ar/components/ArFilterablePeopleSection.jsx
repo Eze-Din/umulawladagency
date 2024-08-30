@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDownIcon } from '@heroicons/react/outline';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
-import expert1Image from '../assets/images/exp1.jpg';
-import expert2Image from '../assets/images/exp2.jpg';
-import expert3Image from '../assets/images/exp3.jpg';
-import per1Pdf from '../assets/pdfs/tigist.pdf';
+import expert1Image from '../../assets/images/exp1.jpg';
+import expert2Image from '../../assets/images/exp2.jpg';
+import expert3Image from '../../assets/images/exp3.jpg';
+import per1Pdf from '../../assets/pdfs/tigist.pdf';
 
 // Sample data for people (this would typically come from a database or API)
 const people = [

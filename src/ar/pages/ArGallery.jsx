@@ -6,12 +6,12 @@ import YouTube from 'react-youtube';
 import { FaPlayCircle } from 'react-icons/fa';
 
 // Import sample images and videos
-import img1 from '../assets/images/exp1.jpg';
-import img2 from '../assets/images/exp2.jpg';
-import img3 from '../assets/images/exp3.jpg';
-import videoThumbnail1 from '../assets/images/dubai.jpeg';
-import videoThumbnail2 from '../assets/images/saudi.jpg';
-import videoThumbnail3 from '../assets/images/jordan.png';
+import img1 from '../../assets/images/exp1.jpg';
+import img2 from '../../assets/images/exp2.jpg';
+import img3 from '../../assets/images/exp3.jpg';
+import videoThumbnail1 from '../../assets/images/dubai.jpeg';
+import videoThumbnail2 from '../../assets/images/saudi.jpg';
+import videoThumbnail3 from '../../assets/images/jordan.png';
 
 // Image and video data
 const images = [img1, img2, img3, img1];

@@ -7,6 +7,10 @@ import TeamCard from '../components/TeamCard';
 import FAQ from '../components/FAQ';
 import PartnersCarousel from '../components/PartnersCarousel';
 // Import images
+import serviceImage1 from '../assets/images/followup.jpg';
+import serviceImage2 from '../assets/images/health.png';
+import serviceImage3 from '../assets/images/multiple.png';
+import serviceImage4 from '../assets/images/contract.png';
 import ImageCarousel from '../components/ImageCarousel';
 import expert1Image from '../assets/images/exp1.jpg';
 import expert2Image from '../assets/images/exp2.jpg';
@@ -58,10 +62,10 @@ function Home() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">Our Services</h2>
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2">
-            <ServiceCard image={expert1Image} title="Claim Followup" description="We follow up and supervise different issues related to the employees who are recruited via our agency" />
-            <ServiceCard image={expert2Image} title="Health Insurance" description="Our customers are made sure that they have their health insurance covered." />
-            <ServiceCard image={expert3Image} title="Multiple Countries" description="Currently we are working with the Kingdom of Saudi Arabia, United Arab Emirates and Jordan. We will expand soon to other places." />
-            <ServiceCard image={expert1Image} title="Flexible contracts​" description="We have flexible type of contract  that suits our customers and that address the right situations of our clients." />
+            <ServiceCard image={serviceImage1} title="Claim Followup" description="We follow up and supervise different issues related to the employees who are recruited via our agency" />
+            <ServiceCard image={serviceImage2} title="Health Insurance" description="Our customers are made sure that they have their health insurance covered." />
+            <ServiceCard image={serviceImage3} title="Multiple Countries" description="Currently we are working with the Kingdom of Saudi Arabia, United Arab Emirates and Jordan. We will expand soon to other places." />
+            <ServiceCard image={serviceImage4} title="Flexible contracts​" description="We have flexible type of contract  that suits our customers and that address the right situations of our clients." />
           </div>
         </div>
         <StatesSection />

@@ -1,7 +1,7 @@
 // src/components/HeaderTop.jsx
 
 import React from 'react';
-import WhatsAppIcon from '../assets/images/whatsapp.png';
+import WhatsAppIcon from '../../assets/images/whatsapp.png';
 
 function ArHeaderTop() {
   return (

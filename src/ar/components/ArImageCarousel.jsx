@@ -2,9 +2,9 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import dubai from '../assets/images/dubai.jpeg';
-import saudi from '../assets/images/saudi.jpg';
-import jordan from '../assets/images/jordan.png';
+import dubai from '../../assets/images/dubai.jpeg';
+import saudi from '../../assets/images/saudi.jpg';
+import jordan from '../../assets/images/jordan.png';
 
 const images = [
   { src: saudi, text: 'العمل في المملكة العربية السعودية' },

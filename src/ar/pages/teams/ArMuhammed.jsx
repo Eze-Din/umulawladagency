@@ -1,5 +1,5 @@
 import React from 'react'
-import muhammedImg from '../../assets/images/muhammed.png';
+import muhammedImg from '../../../assets/images/muhammed.png';
 
 function ArMuhammed() {
   return (

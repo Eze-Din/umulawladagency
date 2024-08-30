@@ -8,9 +8,9 @@ const FAQ = () => {
   };
 
   const faqs = [
-    { question: "How many partners do we have?", answer: "We currently have over 50 partners." },
-    { question: "How many maids have departed?", answer: "Over 200 maids have been successfully placed." },
-    { question: "How many years of experience do we have?", answer: "We have more than 10 years of industry experience." },
+    { question: "How many partners do we have?", answer: "We currently have over 15+ partners." },
+    { question: "How many maids have departed?", answer: "Over 200+ maids have been successfully placed." },
+    { question: "How many years of experience do we have?", answer: "We have more than 2+ years of industry experience." },
   ];
 
   return (

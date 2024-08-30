@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import logoimg from '../assets/images/umueng3.png';
+import logoimg from '../../assets/images/umueng3.png';
 import { FaGlobe } from 'react-icons/fa';
 
 function ArNavbar() {

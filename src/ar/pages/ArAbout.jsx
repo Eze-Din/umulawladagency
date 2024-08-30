@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Import example team images
-import teamMember1 from '../assets/images/exp1.jpg';
-import teamMember2 from '../assets/images/exp2.jpg';
-import teamMember3 from '../assets/images/exp3.jpg';
+import teamMember1 from '../../assets/images/exp1.jpg';
+import teamMember2 from '../../assets/images/exp2.jpg';
+import teamMember3 from '../../assets/images/exp3.jpg';
 
 function ArAbout() {
   return (

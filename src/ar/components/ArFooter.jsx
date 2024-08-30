@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import FontAwesome icons
-import logo from '../assets/images/umueng3.png'; // Adjust the path to your logo image
+import logo from '../../assets/images/umueng3.png'; // Adjust the path to your logo image
 
 const ArFooter = () => {
   return (

@@ -7,11 +7,15 @@ import TeamCard from '../components/ArTeamCard'; // Import TeamCard component
 import ArFAQ from '../components/ArFAQ';
 import PartnersCarousel from '../components/ArPartnersCarousel'; // Import PartnersCarousel component
 // Import images
+import serviceImage1 from '../../assets/images/followup.jpg';
+import serviceImage2 from '../../assets/images/health.png';
+import serviceImage3 from '../../assets/images/multiple.png';
+import serviceImage4 from '../../assets/images/contract.png';
 import ImageCarousel from '../components/ArImageCarousel';
-import expert1Image from '../assets/images/exp1.jpg';
-import expert2Image from '../assets/images/exp2.jpg';
-import expert3Image from '../assets/images/exp3.jpg';
-import WhatsAppIcon from '../assets/images/whatsapp.png';
+import expert1Image from '../../assets/images/exp1.jpg';
+import expert2Image from '../../assets/images/exp2.jpg';
+import expert3Image from '../../assets/images/exp3.jpg';
+import WhatsAppIcon from '../../assets/images/whatsapp.png';
 
 function ArHome() {
   return (
@@ -58,10 +62,10 @@ function ArHome() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">خدماتنا</h2>
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2">
-            <ServiceCard image={expert1Image} title="متابعة المطالبة" description="نقوم بمتابعة والإشراف على مختلف القضايا المتعلقة بالموظفين الذين يتم توظيفهم عن طريق وكالتنا" />
-            <ServiceCard image={expert2Image} title="تأمين صحي" description="نتأكد من أن عملائنا يتمتعون بالتأمين الصحي" />
-            <ServiceCard image={expert3Image} title="بلدان متعددة" description="نحن نعمل حاليًا مع المملكة العربية السعودية والإمارات العربية المتحدة والأردن، وسنتوسع قريبًا إلى أماكن أخرى" />
-            <ServiceCard image={expert1Image} title="عقود مرنة​" description="لدينا نوع مرن من العقود التي تناسب عملائنا والتي تعالج المواقف المناسبة لعملائنا" />
+            <ServiceCard image={serviceImage1} title="متابعة المطالبة" description="نقوم بمتابعة والإشراف على مختلف القضايا المتعلقة بالموظفين الذين يتم توظيفهم عن طريق وكالتنا" />
+            <ServiceCard image={serviceImage2} title="تأمين صحي" description="نتأكد من أن عملائنا يتمتعون بالتأمين الصحي" />
+            <ServiceCard image={serviceImage3} title="بلدان متعددة" description="نحن نعمل حاليًا مع المملكة العربية السعودية والإمارات العربية المتحدة والأردن، وسنتوسع قريبًا إلى أماكن أخرى" />
+            <ServiceCard image={serviceImage4} title="عقود مرنة​" description="لدينا نوع مرن من العقود التي تناسب عملائنا والتي تعالج المواقف المناسبة لعملائنا" />
           </div>
         </div>
         <ArStatesSection />

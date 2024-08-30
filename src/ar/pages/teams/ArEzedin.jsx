@@ -1,5 +1,5 @@
 import React from 'react'
-import ezedinImg from '../../assets/images/ezedin.png';
+import ezedinImg from '../../../assets/images/ezedin.png';
 
 function ArEzedin() {
   return (
