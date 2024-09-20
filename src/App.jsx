@@ -6,6 +6,8 @@ import SplashScreen from './components/SplashScreen';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Recruitment from './pages/Recruitment';
+import BlogSection from "./components/BlogSection";
+import BlogPost from "./components/blogs/BlogPost";
 import Gallery from './pages/Gallery';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -79,6 +81,8 @@ const MainApp = () => {
           <Route path="/en/" element={<Home />} />
           <Route path="/en/services" element={<Services />} />
           <Route path="/en/recruitment" element={<Recruitment />} />
+          <Route path="/en/blog/:id" element={<BlogPost />} />
+          <Route path="/en/blog" element={<BlogSection />} />
           <Route path="/en/gallery" element={<Gallery />} />
           <Route path="/en/about" element={<About />} />
           <Route path="/en/contact" element={<Contact />} />

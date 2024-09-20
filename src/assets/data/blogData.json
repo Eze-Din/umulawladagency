@@ -1,0 +1,19 @@
+[
+    {
+      "id": "blog1",
+      "title": "Why Health Insurance is Important",
+      "description": "Discover the significance of health insurance in today’s world...",
+      "content": "Full content of the blog post goes here...",
+      "date": "2024-09-01",
+      "popularity": 125
+    },
+    {
+      "id": "blog2",
+      "title": "Understanding Flexible Contracts",
+      "description": "Learn how flexible contracts can benefit both employers and employees...",
+      "content": "Full content of the blog post goes here...",
+      "date": "2024-09-15",
+      "popularity": 89
+    }
+  ]
+  

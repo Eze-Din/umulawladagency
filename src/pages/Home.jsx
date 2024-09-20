@@ -4,6 +4,7 @@ import NotificationPanel from '../components/NotificationPanel';
 import FilterablePeopleSection from '../components/FilterablePeopleSection';
 import ServiceCard from '../components/ServiceCard';
 import StatesSection from '../components/StatesSection';
+import BlogSection from '../components/BlogSection';
 import TeamCard from '../components/TeamCard';
 import FAQ from '../components/FAQ';
 import PartnersCarousel from '../components/PartnersCarousel';
@@ -71,6 +72,14 @@ function Home() {
           </div>
         </div>
         <StatesSection />
+      </section>
+
+      {/* Blog Section */}
+      <section className="bg-gray-500" data-aos="fade-up">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gold-500 mb-8">News</h2>
+          <BlogSection />
+        </div>
       </section>
 
       {/* Our Team of Experts Section */}
