@@ -3,7 +3,8 @@
       "id": "blog1",
       "title": "Why Health Insurance is Important",
       "description": "Discover the significance of health insurance in today’s world...",
-      "content": "Full content of the blog post goes here...",
+      "image": "./abdurezaq.png",
+      "content": "Full content of the blog post goes here ...",
       "date": "2024-09-01",
       "popularity": 125
     },
