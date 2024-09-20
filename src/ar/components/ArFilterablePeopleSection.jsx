@@ -50,6 +50,15 @@ function ArFilterablePeopleSection() {
     });
   };
 
+  const clearFilters = () => {
+    setSelectedFilters({
+      age: '',
+      experience: '',
+      language: '',
+      religion: '',
+    });
+  };
+
   const filteredPeople = people.filter((person) => {
     return (
       (selectedFilters.age.length === 0 || selectedFilters.age.includes(person.age.toString())) &&
@@ -138,6 +147,15 @@ function ArFilterablePeopleSection() {
 
       {/* People Display */}
       <div className="w-full md:w-2/3">
+        {/* Clear Selection Button */}
+        <div className="text-white mt-2">
+          <button
+            onClick={clearFilters}
+            className=""
+          >
+            مسح الاختيار
+          </button>
+        </div>
         {filteredPeople.length > 0 ? (
           filteredPeople.map((person) => (
             <Accordion key={person.id} title={person.name}>

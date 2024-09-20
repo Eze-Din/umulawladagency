@@ -65,7 +65,7 @@ function FilterablePeopleSections() {
   return (
     <div className="px-4">
       {/* Filters Dropdowns */}
-      <div className="flex flex-wrap gap-4 justify-center mb-8">
+      <div className="flex flex-wrap gap-2 justify-center mb-8 sticky">
         {/* Age Filter */}
         <div>
           <select

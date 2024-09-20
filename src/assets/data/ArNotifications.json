@@ -1,0 +1,6 @@
+[
+  { "message": "عرض لفترة محدودة! احصل على خصم 20% على طلبك الأول.", "buttonLabel": "اطلب الآن", "buttonUrl": "/shop" },
+  { "message": "خدمات جديدة متاحة الآن!", "buttonLabel": "تعلم أكثر", "buttonUrl": "/services" },
+  { "message": "We value your feedback, reach out to us for any inquiries.", "buttonLabel": "Contact Us", "buttonUrl": "/contact" },
+  { "message": "Our customer service is available 24/7 for your convenience.", "buttonLabel": "Get Support", "buttonUrl": "/support" }
+]

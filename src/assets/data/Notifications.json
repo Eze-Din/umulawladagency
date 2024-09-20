@@ -1,0 +1,6 @@
+[
+  { "message": "Limited-time offer! Get 20% off on your first order.", "buttonLabel": "Shop Now", "buttonUrl": "/shop" },
+  { "message": "New services are available now!", "buttonLabel": "Learn More", "buttonUrl": "/services" },
+  { "message": "We value your feedback, reach out to us for any inquiries.", "buttonLabel": "Contact Us", "buttonUrl": "/contact" },
+  { "message": "Our customer service is available 24/7 for your convenience.", "buttonLabel": "Get Support", "buttonUrl": "/support" }
+]

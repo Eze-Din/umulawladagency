@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NotificationPanel from '../components/NotificationPanel';
 import FilterablePeopleSection from '../components/FilterablePeopleSection';
 import ServiceCard from '../components/ServiceCard';
 import StatesSection from '../components/StatesSection';
@@ -21,7 +22,8 @@ function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative">
+      <NotificationPanel />
+      <section className="relative pt-2">
       <ImageCarousel />
       </section>
 
