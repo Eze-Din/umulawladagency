@@ -3,7 +3,7 @@
       "id": "blog1",
       "title": "Why Health Insurance is Important",
       "description": "Discover the significance of health insurance in today’s world...",
-      "image": "./abdurezaq.png",
+      "image": "image1.jpg",
       "content": "Full content of the blog post goes here ...",
       "date": "2024-09-01",
       "popularity": 125
@@ -12,9 +12,19 @@
       "id": "blog2",
       "title": "Understanding Flexible Contracts",
       "description": "Learn how flexible contracts can benefit both employers and employees...",
+      "image": "image2.jpg",
       "content": "Full content of the blog post goes here...",
       "date": "2024-09-15",
       "popularity": 89
+    },
+    {
+      "id": "blog3",
+      "title": "UmulAwlad is Hiring",
+      "description": "We are hiring employees...",
+      "image": "image3.jpg",
+      "content": "We are hiring accountant for our company..",
+      "date": "2024-09-20",
+      "popularity": 127
     }
   ]
   
