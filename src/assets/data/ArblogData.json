@@ -1,0 +1,30 @@
+[
+    {
+      "id": "arblog1",
+      "title": "Foreign Agency",
+      "description": "Discover the significance of health insurance in today’s world...",
+      "image": "image1.jpg",
+      "content": "Full content of the blog post goes here ...",
+      "date": "2024-09-01",
+      "popularity": 125
+    },
+    {
+      "id": "arblog2",
+      "title": "Understanding Flexible Contracts",
+      "description": "Learn how flexible contracts can benefit both employers and employees...",
+      "image": "image2.jpg",
+      "content": "Full content of the blog post goes here...",
+      "date": "2024-09-15",
+      "popularity": 89
+    },
+    {
+      "id": "arblog3",
+      "title": "شركة UmulAlwad تقوم بالتوظيف",
+      "description": "We are hiring employees...",
+      "image": "image3.jpg",
+      "content": "We are hiring accountant for our company..",
+      "date": "2024-09-20",
+      "popularity": 127
+    }
+  ]
+  

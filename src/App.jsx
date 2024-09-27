@@ -23,6 +23,8 @@ import Footer from './components/Footer';
 import ArHome from './ar/pages/ArHome';
 import ArServices from './ar/pages/ArServices';
 import ArRecruitment from './ar/pages/ArRecruitment';
+import ArBlogSection from "./ar/components/ArBlogSection";
+import ArBlogPost from "./ar/components/blogs/ArBlogPost";
 import ArGallery from './ar/pages/ArGallery';
 import ArAbout from './ar/pages/ArAbout';
 import ArContact from './ar/pages/ArContact';
@@ -97,6 +99,8 @@ const MainApp = () => {
           <Route path="/ar/" element={<ArHome />} />
           <Route path="/ar/services" element={<ArServices />} />
           <Route path="/ar/recruitment" element={<ArRecruitment />} />
+          <Route path="/ar/blog/:id" element={<ArBlogPost />} />
+          <Route path="/ar/blog" element={<ArBlogSection />} />
           <Route path="/ar/gallery" element={<ArGallery />} />
           <Route path="/ar/about" element={<ArAbout />} />
           <Route path="/ar/contact" element={<ArContact />} />

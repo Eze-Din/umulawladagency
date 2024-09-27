@@ -4,6 +4,7 @@ import ArNotificationPanel from '../components/ArNotificationPanel';
 import FilterablePeopleSection from '../components/ArFilterablePeopleSection';
 import ServiceCard from '../components/ArServiceCard'; // Import ServiceCard component
 import ArStatesSection from '../components/ArStatesSection';
+import BlogSection from '../components/ArBlogSection';
 import TeamCard from '../components/ArTeamCard'; // Import TeamCard component
 import ArFAQ from '../components/ArFAQ';
 import PartnersCarousel from '../components/ArPartnersCarousel'; // Import PartnersCarousel component
@@ -71,6 +72,14 @@ function ArHome() {
           </div>
         </div>
         <ArStatesSection />
+      </section>
+
+      {/* Blog Section */}
+      <section className="bg-gray-500" data-aos="fade-up">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gold-500 mb-8">أخبار</h2>
+          <BlogSection />
+        </div>
       </section>
 
       {/* Our Team of Experts Section */}

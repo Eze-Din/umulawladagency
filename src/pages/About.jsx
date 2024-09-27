@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 // Import example team images
 import teamMember1 from '../assets/images/exp1.jpg';
@@ -9,6 +10,11 @@ import teamMember3 from '../assets/images/exp3.jpg';
 function About() {
   return (
     <div className="about-page bg-gray-600" data-aos="fade-left">
+      <Helmet>
+        <title>About Umulawlad Agency</title>
+        <meta name="description" content="Umulawlad Agency provides exceptional services including recruitment, gallery, and more." />
+        <meta name="keywords" content="Umulawlad Agency, recruitment, gallery, services, about" />
+      </Helmet>
       {/* Hero Section */}
       <div className="hero-section relative bg-cover bg-center h-64">
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-gold-500">
