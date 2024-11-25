@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
-import expert1Image from '../assets/images/exp1.jpg';
-import expert2Image from '../assets/images/exp2.jpg';
-import expert3Image from '../assets/images/exp3.jpg';
+import expert1Image from '../assets/images/noimg.jpg';
 import per1Pdf from '../assets/pdfs/tigist.pdf';
 import WhatsAppIcon from '../assets/images/whatsapp.png';
 
 // Sample data for people (this would typically come from a database or API)
 const people = [
   { id: 1, name: 'John Doe', passport: 'EP8544781', age: '20-30', ages: 23, martial: 'Single', skill: 'House Maid', experience: '2-5 years', language: 'English', religion: 'Christian', photo: expert1Image, pdf: per1Pdf },
-  { id: 2, name: 'Jane Smith', passport: 'EP8544782', age: '31-40', ages: 31, martial: 'Single', skill: 'House Maid', experience: '5-10 years', language: 'Amharic', religion: 'Muslim', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1UxPoIa5ltdnCxiJBuxQn2NLqyx3aDADT/view?usp=sharing' },
-  { id: 3, name: 'Eze Din', passport: 'EP8544783', age: '41-50', ages: 45, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert3Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
-  { id: 4, name: 'Mame', passport: 'EP8544784', age: '20-30', ages: 27, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
+  { id: 2, name: 'Jane Smith', passport: 'EP8544782', age: '31-40', ages: 31, martial: 'Single', skill: 'House Maid', experience: '5-10 years', language: 'Amharic', religion: 'Muslim', photo: expert1Image, pdf: 'https://drive.google.com/file/d/1UxPoIa5ltdnCxiJBuxQn2NLqyx3aDADT/view?usp=sharing' },
+  { id: 3, name: 'Eze Din', passport: 'EP8544783', age: '41-50', ages: 45, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert1Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
+  { id: 4, name: 'Mame', passport: 'EP8544784', age: '20-30', ages: 27, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert1Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
   { id: 5, name: 'Hanan', passport: 'EP8544785', age: '20-30', ages: 29, martial: 'Married', skill: 'House Maid', experience: '2-5 years', language: 'English', religion: 'Christian', photo: expert1Image, pdf: per1Pdf },
-  { id: 6, name: 'Hayat', passport: 'EP8544786', age: '31-40', ages: 38, martial: 'Single', skill: 'House Maid', experience: '10-20 years', language: 'Amharic', religion: 'Muslim', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1UxPoIa5ltdnCxiJBuxQn2NLqyx3aDADT/view?usp=sharing' },
-  { id: 7, name: 'Seble', passport: 'EP8544787', age: '41-50', ages: 45, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert3Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
-  { id: 8, name: 'Jemila', passport: 'EP8544788', age: '20-30', ages: 22, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
+  { id: 6, name: 'Hayat', passport: 'EP8544786', age: '31-40', ages: 38, martial: 'Single', skill: 'House Maid', experience: '10-20 years', language: 'Amharic', religion: 'Muslim', photo: expert1Image, pdf: 'https://drive.google.com/file/d/1UxPoIa5ltdnCxiJBuxQn2NLqyx3aDADT/view?usp=sharing' },
+  { id: 7, name: 'Seble', passport: 'EP8544787', age: '41-50', ages: 45, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert1Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
+  { id: 8, name: 'Jemila', passport: 'EP8544788', age: '20-30', ages: 22, martial: 'Married', skill: 'House Maid', experience: '10-20 years', language: 'Arabic', religion: 'Other', photo: expert1Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
   // Add more people as needed
 ];
 

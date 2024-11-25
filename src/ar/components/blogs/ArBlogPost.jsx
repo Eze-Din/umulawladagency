@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import blogData from '../../../assets/data/ArblogData.json';
-import image1 from '../../../assets/images/ezedin.png';
-import image2 from '../../../assets/images/hanan.png';
-import image3 from '../../../assets/images/imamudin.png';
+import image1 from '../../../assets/images/ezedin.jpeg';
+import image2 from '../../../assets/images/hanan.jpeg';
+import image3 from '../../../assets/images/mame.jpeg';
 
 const images = {
   'arblog1': image1,

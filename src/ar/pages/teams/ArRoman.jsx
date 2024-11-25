@@ -1,5 +1,5 @@
 import React from 'react'
-import romanImg from '../../../assets/images/roman.jpg';
+import romanImg from '../../../assets/images/noimg.jpg';
 
 function ArRoman() {
   return (

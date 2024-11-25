@@ -1,5 +1,5 @@
 import React from 'react'
-import imamudinImg from '../../../assets/images/imamudin.png';
+import tinishuImg from '../../../assets/images/noimg.jpg';
 
 function ArImamudin() {
   return (
@@ -7,7 +7,7 @@ function ArImamudin() {
       <h1 className="text-4xl font-bold text-center text-gold-500 mb-4">المرشح المعتمد</h1>
       <p className="text-lg text-center">هذه هي الوثيقة القانونية للمرشح</p>
       <div className="h-96 overflow-hidden rounded-lg shadow-md">
-        <img src={imamudinImg} alt="Hanan" className="w-full h-full object-cover"/>
+        <img src={tinishuImg} alt="Hanan" className="w-full h-full object-cover"/>
       </div>
     </div>
   );

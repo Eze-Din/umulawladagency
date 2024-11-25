@@ -36,6 +36,17 @@ const ArFooter = () => {
           {/*<p className="text-sm text-white">Developed by <a href="https://ezedin.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-gray-400 underline">Ezedin</a></p>*/}
         </div>
 
+        <div className="flex items-center justify-center bg-gray-900">
+          <a
+            href="https://ezedin.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm md:text-base font-medium text-white bg-blue-1000 hover:bg-blue-600 transition-colors px-4 py-2 rounded-full shadow-lg"
+          >
+            بناه عز الدين - عرض المحفظة
+          </a>
+        </div>
+
         {/* Right Side: Social Media Icons */}
         <div className="flex justify-center mt-4 md:mt-0">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-gray-400 mx-2">

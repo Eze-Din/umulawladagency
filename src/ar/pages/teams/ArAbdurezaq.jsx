@@ -1,5 +1,5 @@
 import React from 'react'
-import abdurezaqImg from '../../../assets/images/abdurezaq.png';
+import abdurezaqImg from '../../../assets/images/abdurezaq.jpeg';
 
 function ArAbdurezaq() {
   return (

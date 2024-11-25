@@ -14,9 +14,11 @@ import serviceImage2 from '../assets/images/health.png';
 import serviceImage3 from '../assets/images/multiple.png';
 import serviceImage4 from '../assets/images/contract.png';
 import ImageCarousel from '../components/ImageCarousel';
-import expert1Image from '../assets/images/exp1.jpg';
-import expert2Image from '../assets/images/exp2.jpg';
-import expert3Image from '../assets/images/exp3.jpg';
+import teamMember1 from '../assets/images/hanan.jpeg';
+import teamMember2 from '../assets/images/abdurezaq.jpeg';
+import teamMember3 from '../assets/images/mame.jpeg';
+import teamMember4 from '../assets/images/ezedin.jpeg';
+import teamMember5 from '../assets/images/noimg.jpg';
 import WhatsAppIcon from '../assets/images/whatsapp.png';
 
 function Home() {
@@ -87,12 +89,12 @@ function Home() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-gold-500 mb-8">Our Team of Experts</h2>
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2">
-            <TeamCard name={<Link to="/en/teams/hanan">Hanan Hussen</Link>} role="Owner" image={expert1Image} /> {/* Use imported image */}
-            <TeamCard name={<Link to="/en/teams/abdurezaq">Abdurezaq Akmel</Link>} role="Agent" image={expert2Image} /> {/* Use imported image */}
-            <TeamCard name={<Link to="/en/teams/roman">Roman Akmel</Link>} role="Manager" image={expert3Image} /> {/* Use imported image */}
-            <TeamCard name={<Link to="/en/teams/imamudin">Imamudin Akmel</Link>} role="Unknown" image={expert3Image} /> {/* Use imported image */}
-            <TeamCard name={<Link to="/en/teams/muhammed">Muhammed Seid</Link>} role="IT Man" image={expert2Image} /> {/* Use imported image */}
-            <TeamCard name={<Link to="/en/teams/ezedin">Ezedin Nigussie</Link>} role="Unknown" image={expert3Image} /> {/* Use imported image */}
+            <TeamCard name={<Link to="/en/teams/hanan">Hanan Hussen</Link>} role="Owner" image={teamMember1} /> {/* Use imported image */}
+            <TeamCard name={<Link to="/en/teams/abdurezaq">Abdurezaq Akmel</Link>} role="Agent" image={teamMember2} /> {/* Use imported image */}
+            <TeamCard name={<Link to="/en/teams/roman">Roman Akmel</Link>} role="Manager" image={teamMember5} /> {/* Use imported image */}
+            <TeamCard name={<Link to="/en/teams/imamudin">Abdurezaq</Link>} role="Unknown" image={teamMember5} /> {/* Use imported image */}
+            <TeamCard name={<Link to="/en/teams/muhammed">Muhammed Seid</Link>} role="IT Man" image={teamMember3} /> {/* Use imported image */}
+            <TeamCard name={<Link to="/en/teams/ezedin">Ezedin Nigussie</Link>} role="Unknown" image={teamMember4} /> {/* Use imported image */}
           </div>
         </div>
       </section>

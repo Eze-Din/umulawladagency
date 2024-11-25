@@ -2,16 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDownIcon } from '@heroicons/react/outline';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
-import expert1Image from '../../assets/images/exp1.jpg';
-import expert2Image from '../../assets/images/exp2.jpg';
-import expert3Image from '../../assets/images/exp3.jpg';
+import expert1Image from '../../assets/images/noimg.jpg';
 import per1Pdf from '../../assets/pdfs/tigist.pdf';
 
 // Sample data for people (this would typically come from a database or API)
 const people = [
   { id: 1, name: 'John Doe', age: '20-30', ages: 23, martial: 'غير متزوج', skill: 'خادمة المنزل', experience: '0-2 سنين', language: 'إنجليزي', religion: 'النصراني', photo: expert1Image, pdf: per1Pdf },
-  { id: 2, name: 'Jane Smith', age: '31-40', ages: 31, martial: 'غير متزوج', skill: 'خادمة المنزل', experience: '3-5 سنين', language: 'الأمهرية', religion: 'مسلم', photo: expert2Image, pdf: 'https://drive.google.com/file/d/1UxPoIa5ltdnCxiJBuxQn2NLqyx3aDADT/view?usp=sharing' },
-  { id: 3, name: 'Eze Din', age: '41-50', ages: 45, martial: 'متزوج', skill: 'خادمة المنزل', experience: '6-10 سنين', language: 'عربي', religion: 'آخر', photo: expert3Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
+  { id: 2, name: 'Jane Smith', age: '31-40', ages: 31, martial: 'غير متزوج', skill: 'خادمة المنزل', experience: '3-5 سنين', language: 'الأمهرية', religion: 'مسلم', photo: expert1Image, pdf: 'https://drive.google.com/file/d/1UxPoIa5ltdnCxiJBuxQn2NLqyx3aDADT/view?usp=sharing' },
+  { id: 3, name: 'Eze Din', age: '41-50', ages: 45, martial: 'متزوج', skill: 'خادمة المنزل', experience: '6-10 سنين', language: 'عربي', religion: 'آخر', photo: expert1Image, pdf: 'https://drive.google.com/file/d/1Q4xbyQcl8jVz4XkanK2jcAlGOPpsWzVL/view?usp=sharing' },
   // Add more people as needed
 ];
 

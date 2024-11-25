@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 // Import example team images
-import teamMember1 from '../assets/images/exp1.jpg';
-import teamMember2 from '../assets/images/exp2.jpg';
-import teamMember3 from '../assets/images/exp3.jpg';
+import teamMember1 from '../assets/images/hanan.jpeg';
+import teamMember2 from '../assets/images/abdurezaq.jpeg';
+import teamMember3 from '../assets/images/mame.jpeg';
+import teamMember4 from '../assets/images/ezedin.jpeg';
+import teamMember5 from '../assets/images/noimg.jpg';
 
 function About() {
   return (
@@ -83,13 +85,13 @@ function About() {
             <p className="text-gray-600">Agent</p>
           </div>
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
-            <img src={teamMember3} alt="Team Member 3" className="w-32 h-32 mx-auto rounded-full mb-4" />
+            <img src={teamMember5} alt="Team Member 3" className="w-32 h-32 mx-auto rounded-full mb-4" />
             <h3 className="text-2xl font-bold text-gray-800"><Link to="/en/teams/roman">Roman Akmel</Link></h3>
             <p className="text-gray-600">Manager</p>
           </div>
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
-            <img src={teamMember3} alt="Team Member 3" className="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 className="text-2xl font-bold text-gray-800"><Link to="/en/teams/imamudin">Imamudin Akmel</Link></h3>
+            <img src={teamMember5} alt="Team Member 3" className="w-32 h-32 mx-auto rounded-full mb-4" />
+            <h3 className="text-2xl font-bold text-gray-800"><Link to="/en/teams/imamudin">Abdurezaq</Link></h3>
             <p className="text-gray-600">Unknown</p>
           </div>
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
@@ -98,7 +100,7 @@ function About() {
             <p className="text-gray-600">IT Man</p>
           </div>
           <div className="team-member text-center bg-white p-6 rounded-lg shadow-md">
-            <img src={teamMember3} alt="Team Member 3" className="w-32 h-32 mx-auto rounded-full mb-4" />
+            <img src={teamMember4} alt="Team Member 3" className="w-32 h-32 mx-auto rounded-full mb-4" />
             <h3 className="text-2xl font-bold text-gray-800"><Link to="/en/teams/ezedin">Ezedin Nigussie</Link></h3>
             <p className="text-gray-600">UnKnown</p>
           </div>

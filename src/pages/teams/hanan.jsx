@@ -1,5 +1,5 @@
 import React from 'react';
-import hananImg from '../../assets/images/hanan.png';
+import hananImg from '../../assets/images/hanan.jpeg';
 
 function Hanan() {
   return (
